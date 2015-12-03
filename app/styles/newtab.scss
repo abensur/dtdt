@@ -1,0 +1,89 @@
+// bower:css
+// endbower
+@import 'utils';
+$bg: #FCFAE1;
+$gutter: 24px;
+
+html {
+  background: $bg;
+  box-sizing: border-box;
+  * { box-sizing: inherit; }
+}
+
+.body { margin: 0; }
+
+#source {
+  left: $gutter;
+  position: absolute;
+  top: $gutter;
+}
+
+.datatau {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: $gutter + 16px;
+
+  a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  &__item {
+    @include card(2);
+    background: white;
+    flex: 0 224px;
+    height: 324px;
+    margin: $gutter;
+    padding: $gutter / 2;
+  }
+
+  &__thumbnail {
+    @include card(1);
+    background: #efefef;
+    height: 200px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      @include card(2);
+    }
+
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__points-time,
+  &__points-time a,
+  &__comments {
+    color: #bbb;
+    text-decoration: none;
+  }
+
+  &__title {
+    margin-bottom: $gutter / 2;
+    margin-top: $gutter / 2;
+    overflow: hidden;
+
+    a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    h2 {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+
+  &__points-time {
+    margin-bottom: $gutter / 4;
+  }
+}

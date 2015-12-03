@@ -1,0 +1,7 @@
+{
+  "name": "dtdt",
+  "description": "replace-your-new-tab-with-the-latest-datatau-entries",
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
