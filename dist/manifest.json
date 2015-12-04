@@ -1,0 +1,21 @@
+{
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appShortName__",
+  "description": "__MSG_appDescription__",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png",
+    "scalable": "images/icon-large.svg"
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

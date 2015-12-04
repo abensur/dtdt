@@ -7,6 +7,7 @@ gulp.task('build', gulpSequence(
     'scripts',
     'styles',
     'pages',
+    'locales',
     'images',
     'livereload'
   ]

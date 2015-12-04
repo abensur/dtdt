@@ -3,8 +3,8 @@ import gulpif from 'gulp-if';
 import livereload from 'gulp-livereload';
 import args from './lib/args';
 
-gulp.task('manifest', () => {
-  return gulp.src('app/manifest.json')
-    .pipe(gulp.dest(`dist`))
+gulp.task('locales', () => {
+  return gulp.src('app/_locales/**/*.json')
+    .pipe(gulp.dest(`dist/_locales`))
     .pipe(gulpif(args.watch, livereload()));
 });

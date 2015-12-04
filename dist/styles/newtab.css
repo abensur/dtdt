@@ -1,0 +1,62 @@
+@import url(bower_components/normalize-css/normalize.css);
+html {
+  background: #FCFAE1;
+  box-sizing: border-box; }
+  html * {
+    box-sizing: inherit; }
+
+.body {
+  margin: 0; }
+
+#source {
+  left: 24px;
+  position: absolute;
+  top: 24px; }
+
+.datatau {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 40px; }
+  .datatau a:hover {
+    color: blue;
+    text-decoration: underline; }
+  .datatau__item {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+    background: white;
+    flex: 0 224px;
+    height: 324px;
+    margin: 24px;
+    padding: 12px; }
+  .datatau__thumbnail {
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    background: #efefef;
+    height: 200px;
+    transition: all 0.3s ease; }
+    .datatau__thumbnail:hover {
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16); }
+    .datatau__thumbnail a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+  .datatau__points-time,
+  .datatau__points-time a, .datatau__comments {
+    color: #bbb;
+    text-decoration: none; }
+  .datatau__title {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    overflow: hidden; }
+    .datatau__title a {
+      color: #444;
+      text-decoration: none; }
+    .datatau__title h2 {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0; }
+  .datatau__points-time {
+    margin-bottom: 6px; }
