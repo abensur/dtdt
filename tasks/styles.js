@@ -17,13 +17,6 @@ gulp.task('styles', ['bower'], function() {
   return gulp.src('app/styles/*.scss')
     .pipe(wiredep({
       directory: 'bower_components',
-      fileTypes: {
-        scss: {
-          replace: {
-            scss: '@import "/src/app/{{filePath}}";'
-          }
-        }
-      },
       ignorePath: /^(\.\.\/)+/
     }))
     .pipe(gulpif(args.sourcemaps, sourcemaps.init()))
