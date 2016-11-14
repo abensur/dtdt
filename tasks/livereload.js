@@ -18,8 +18,7 @@ gulp.task('livereload', (cb) => {
 
   gutil.log('Starting', gutil.colors.cyan('\'livereload-server\''));
   gulp.watch('app/manifest.json', ['manifest']);
-  gulp.watch('app/styles/**/*.css', ['styles:css']);
-  gulp.watch('app/styles/**/*.scss', ['styles:sass']);
+  gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/pages/**/*.html', ['pages']);
   gulp.watch('app/images/**/*', ['images']);
 

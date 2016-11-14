@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 285"><path d="M0 0h285v285H0z"/><text fill="#fff" x="73.377" y="211.836" font-size="290" font-family="STIXGeneral">τ</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 285 285" preserveAspectRatio="xMidYMid meet" >
+	<rect x="0" y="0" id="background" width="285" height="285" fill="black"/>
+	<text fill="white" x="73.3769" y="211.836" id="tau" style="font-family: STIXGeneral;"  font-size="290px">τ</text>
+</svg>

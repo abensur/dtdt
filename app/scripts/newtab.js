@@ -1,6 +1,7 @@
 'use strict';
 
 import 'd3';
+import './lib/livereload';
 import md5 from 'js-md5';
 import jdenticon from 'jdenticon';
 
